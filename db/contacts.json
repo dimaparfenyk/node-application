@@ -1,42 +1,62 @@
 [
   {
-    "id": "u9kgwNWGi3uUUwh0b8V49",
-    "title": "Eloquent JavaScript, Third Edition",
-    "author": "Marijn Haverbeke"
+    "name": "Allen Raymond",
+    "email": "nulla.ante@vestibul.co.uk",
+    "phone": "(992) 914-3792",
+    "favorite": false
   },
   {
-    "id": "YxhM4QDxPeA3SmPHcEZPJ",
-    "title": "Practical Modern JavaScript",
-    "author": "Nicolas Bevacqua"
+    "name": "Chaim Lewis",
+    "email": "dui.in@egetlacus.ca",
+    "phone": "(294) 840-6685",
+    "favorite": true
   },
   {
-    "id": "zCd_RioNMOBaQwAXnc8Px",
-    "title": "Understanding ECMAScript 6",
-    "author": "Nicholas C. Zakas"
+    "name": "Kennedy Lane",
+    "email": "mattis.Cras@nonenimMauris.net",
+    "phone": "(542) 451-7038",
+    "favorite": false
   },
   {
-    "id": "ck89qe3HriUDHe09TBoJ8",
-    "title": "Speaking JavaScript",
-    "author": "Axel Rauschmayer"
+    "name": "Wylie Pope",
+    "email": "est@utquamvel.net",
+    "phone": "(692) 802-2949",
+    "favorite": true
   },
   {
-    "id": "e1Tpn_I3wBkLREY6wG0lb",
-    "title": "Learning JavaScript Design Patterns",
-    "author": "Addy Osmani"
+    "name": "Cyrus Jackson",
+    "email": "nibh@semsempererat.com",
+    "phone": "(501) 472-5218",
+    "favorite": true
   },
   {
-    "id": "Op8ApLTY0-Vn2cR0vDIwG",
-    "title": "You Don't Know JS Yet",
-    "author": "Kyle Simpson"
+    "name": "Abbot Franks",
+    "email": "scelerisque@magnis.org",
+    "phone": "(186) 568-3720",
+    "favorite": true
   },
   {
-    "id": "dkJSszfrRVtLVR_MfRqcu",
-    "title": "Pro Git",
-    "author": "Scott Chacon and Ben Straub"
+    "name": "Reuben Henry",
+    "email": "pharetra.ut@dictum.co.uk",
+    "phone": "(715) 598-5792",
+    "favorite": true
   },
   {
-    "id": "CTHE0f1kkWwqS5sL2tI8_",
-    "title": "Rethinking Productivity in Software Engineering",
-    "author": "Caitlin Sadowski, Thomas Zimmermann"
+    "name": "Simon Morton",
+    "email": "dui.Fusce.diam@Donec.com",
+    "phone": "(233) 738-2360",
+    "favorite": true
+  },
+  {
+    "name": "Thomas Lucas",
+    "email": "nec@Nulla.com",
+    "phone": "(704) 398-7993",
+    "favorite": false
+  },
+  {
+    "name": "Alec Howard",
+    "email": "Donec.elementum@scelerisquescelerisquedui.net",
+    "phone": "(748) 206-2688",
+    "favorite": true
   }
 ]
