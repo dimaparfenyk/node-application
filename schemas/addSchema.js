@@ -6,4 +6,4 @@ const addSchema = Joi.object({
   email: Joi.string().required(),
 });
 
-module.exports = { addSchema };
+module.exports = addSchema;

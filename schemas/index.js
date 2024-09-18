@@ -1,1 +1,2 @@
-const addSchema = required("./addSchema.js");
+const addSchema = require("./addSchema.js");
+module.exports = { addSchema };
