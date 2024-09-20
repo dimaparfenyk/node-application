@@ -1,6 +1,5 @@
 const contactsServices = require("../services/contactsServices");
 const { HttpError, ctrlWrapper } = require("../helpers");
-const { addSchema } = require("../schemas");
 
 const getAll = async (req, res) => {
   const result = await contactsServices.getAll();
