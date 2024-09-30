@@ -8,13 +8,18 @@ const contactSchema = new Schema(
     phone: { type: String, required: true },
     email: { type: String, required: true },
     favorite: { type: Boolean, default: false },
+    owner: {
+      type: Schema.Types.ObjectId,
+      ref: "user",
+      required: true,
+    },
   },
   { versionKey: false, timestamps: false }
 );
 
 contactSchema.post("save", handleMongooseError);
 
-const Contact = model("Contact", contactSchema);
+const Contact = model("contact", contactSchema);
 
 const addSchema = Joi.object({
   name: Joi.string().required(),
