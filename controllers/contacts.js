@@ -3,13 +3,23 @@ const { HttpError, ctrlWrapper } = require("../helpers");
 
 const getAll = async (req, res) => {
   const { _id: owner } = req.user;
-
-  const { page = 1, limit = 2 } = req.query;
+  // pagination
+  const { page = 1, limit = 10, favorite } = req.query;
+  // calculate contacts to skip
   const skip = (page - 1) * limit;
-  const result = await Contact.find({ owner }, "", {
+
+  const query = { owner };
+
+  if (favorite !== undefined) {
+    query.favorite = favorite === "true";
+  }
+
+  const result = await Contact.find(query, "", {
     skip,
     limit,
   }).populate("owner", "name email");
+  // поиск только по id пользователя
+  // const result = await Contact.find({ owner }, "", {skip,limit}).populate("owner", "name email");
   res.json(result);
 };
 
@@ -39,14 +49,14 @@ const updateContact = async (req, res) => {
   res.json(result);
 };
 
-const updateFavorite = async (req, res) => {
-  const { id } = req.params;
-  const result = await Contact.findByIdAndUpdate(id, req.body, { new: true });
-  if (!result) {
-    throw HttpError(404, "Not found");
-  }
-  res.json(result);
-};
+// const updateFavorite = async (req, res) => {
+//   const { id } = req.params;
+//   const result = await Contact.findByIdAndUpdate(id, req.body, { new: true });
+//   if (!result) {
+//     throw HttpError(404, "Not found");
+//   }
+//   res.json(result);
+// };
 
 const removeContact = async (req, res) => {
   const { id } = req.params;
@@ -64,6 +74,6 @@ module.exports = {
   getContactById: ctrlWrapper(getContactById),
   createContact: ctrlWrapper(createContact),
   updateContact: ctrlWrapper(updateContact),
-  updateFavorite: ctrlWrapper(updateFavorite),
+  // updateFavorite: ctrlWrapper(updateFavorite),
   removeContact: ctrlWrapper(removeContact),
 };
